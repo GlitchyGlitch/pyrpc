@@ -6,6 +6,8 @@ from pyrpc.common.exceptions import (BadPDUFormatError,
                                      WrongArgumentsError, PDUFieldNotExistsError)
 from pyrpc.common.types import ProtocolDataUnit
 
+# FIXME: dir calls ___getaddr__ > s.sendall() while s = None
+
 __all__ = ["Client"]
 
 
