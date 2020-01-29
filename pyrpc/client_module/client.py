@@ -22,10 +22,10 @@ class Client():
     def connect(self):
         self._s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self._s.connect(self._address)
-    
+
     def close(self):
         self._s.shutdown(socket.SHUT_RDWR)
-        self._s.close
+        self._s.close()
 
     def __getattr__(self, name):
 
